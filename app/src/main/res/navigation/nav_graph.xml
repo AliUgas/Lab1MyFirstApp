@@ -22,5 +22,13 @@
         <argument
             android:name="message"
             app:argType="string" />
+        <action
+            android:id="@+id/SecondFragment_to_textbox"
+            app:destination="@id/textbox" />
     </fragment>
+    <fragment
+        android:id="@+id/textbox"
+        android:name="edu.uw.tcss450.aliugas.lab1myfirstapp.ui.Textbox"
+        android:label="fragment_textbox"
+        tools:layout="@layout/fragment_textbox" />
 </navigation>

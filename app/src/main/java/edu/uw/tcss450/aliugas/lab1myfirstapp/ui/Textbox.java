@@ -5,9 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +16,8 @@ import edu.uw.tcss450.aliugas.lab1myfirstapp.databinding.FragmentSecondBinding;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SecondFragment extends Fragment {
+public class Textbox extends Fragment {
+
     private FragmentSecondBinding mBinding;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -28,12 +27,8 @@ public class SecondFragment extends Fragment {
         return mBinding.getRoot();
     }
     @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        mBinding = null;
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
     }
-
-
-
-
 }
