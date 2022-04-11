@@ -27,11 +27,14 @@ public class FirstFragment extends Fragment {
         mBinding = FragmentFirstBinding.inflate(inflater, container, false);
         return mBinding.getRoot();
     }
+
     @Override
     public void onDestroyView() {
+        // test push, blake was here
         super.onDestroyView();
         mBinding = null;
     }
+
     private void processMessage() {
         final String message = mBinding.editMessage.getText().toString();
 
