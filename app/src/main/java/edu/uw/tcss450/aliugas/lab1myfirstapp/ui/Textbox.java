@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 import edu.uw.tcss450.aliugas.lab1myfirstapp.R;
 import edu.uw.tcss450.aliugas.lab1myfirstapp.databinding.FragmentSecondBinding;
-
+// Test push
 /**
  * A simple {@link Fragment} subclass.
  */
